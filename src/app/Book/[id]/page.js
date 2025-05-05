@@ -1,10 +1,11 @@
+"use client"
 import React from 'react'
-
-const page = () => {
+import BookPage from '@/components/pages/Book'
+const page = ({params}) => {
   return (
     <div>
-      hi
-    </div>
+       <BookPage id={params.id}/>
+     </div>
   )
 }
 
